@@ -1,4 +1,4 @@
-import "./App.css";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -6,6 +6,8 @@ function App() {
       <header className="App-header">
         <p>TEST TEXT poop</p>
       </header>
+
+      <Footer />
     </div>
   );
 }
