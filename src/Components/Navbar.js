@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <StyledNavbar className="navbar">
-            <a href="/">MORGANJONES</a>
+            <a href="/" id="mainLogo">
+                <h3>MorganJones</h3>
+            </a>
             <nav>
-                <ul>
-                    <li><Link to="/" >Home</Link></li>
-                    <li><Link to="/projects" >Projects</Link></li>
-                    <li><Link to="/aboutMe" >AboutMe</Link></li>
+                <ul className="quicksandFont">
+                    <li><Link to="/" >Projects</Link></li>
+                    <li><Link to="/about" >About Me</Link></li>
+                    <li><Link to="/contact" >Contact Me</Link></li>
                 </ul>
             </nav>
         </StyledNavbar>
@@ -19,15 +21,24 @@ export default function Navbar() {
 const StyledNavbar = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 0;
+
+    #mainLogo, ul {
+        display: flex;
+    }
+
+    #mainLogo {
+        font-size: 3.2rem;
+        font-family: 'Yellowtail', cursive;
+    }
+
     a {
-        color: white;
-        font-weight: bold;
+        /* font-weight: bold; */
         margin: 0 2rem;
     }
 
     ul {
         list-style-type: none;
-        display: flex;
     }
 `

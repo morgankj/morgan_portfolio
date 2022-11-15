@@ -1,6 +1,10 @@
+import { Route, Routes } from "react-router-dom";
+
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import mePiper from "./Images/meAndPiper.png";
+import Projects from "./Components/Projects";
+import AboutMe from "./Components/AboutMe";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -8,7 +12,12 @@ function App() {
       <header>
         <Navbar />
       </header>
-      {/* <img alt="girl with dog" src={mePiper} /> */}
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/" element={<Projects />} />
+      </Routes>
+      
       
       <Footer />
     </div>

@@ -32,7 +32,20 @@ body {
 	justify-content: space-between;
 }
 
+.quicksandFont, h1 {
+	font-family: 'Quicksand', sans-serif;
+}
+
 /* Header + Footer */
 header, footer {
-	background: purple;
+	background: #9B2226;
 }
+
+header, footer, a {
+	color: white;
+}
+
+a:hover {
+	color: #EE9B00;
+}
+
