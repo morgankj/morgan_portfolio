@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <StyledNavbar className="navbar">
             <a href="/" id="mainLogo">
-                <h3>MorganJones</h3>
+                <h3 className="yellowTailFont">MorganJones</h3>
             </a>
             <nav>
                 <ul className="quicksandFont">
@@ -30,11 +30,9 @@ const StyledNavbar = styled.div`
 
     #mainLogo {
         font-size: 3.2rem;
-        font-family: 'Yellowtail', cursive;
     }
 
     a {
-        /* font-weight: bold; */
         margin: 0 2rem;
     }
 

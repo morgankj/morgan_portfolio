@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Contact() {
     return (
         <StyledContact>
-            <h1>CONTACT ME</h1>
+            <h1>Contact Me</h1>
         </StyledContact>
     );
 }

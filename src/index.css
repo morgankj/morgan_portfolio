@@ -16,7 +16,7 @@ html {
 body {
 	font-size: 1.6rem;
 	line-height: 1.5;
-	font-family: "Raleway", sans-serif;
+	font-family: sans-serif;
 }
 
 * {
@@ -32,7 +32,16 @@ body {
 	justify-content: space-between;
 }
 
-.quicksandFont, h1 {
+.yellowTailFont, h1 {
+	font-family: 'Yellowtail', cursive;
+}
+
+h1 {
+	font-size: 5rem;
+	color: #9B2226
+}
+
+.quicksandFont {
 	font-family: 'Quicksand', sans-serif;
 }
 
