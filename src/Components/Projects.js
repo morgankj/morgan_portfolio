@@ -10,5 +10,7 @@ export default function Projects() {
 }
 
 const StyledProjects = styled.div`
-    background-color: lightblue;
+    h1 {
+        color: #CA6702;
+    }
 `
